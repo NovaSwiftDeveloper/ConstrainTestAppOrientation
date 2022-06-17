@@ -16,19 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="14q-jA-Rqy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14q-jA-Rqy">
                                 <rect key="frame" x="20" y="467" width="374" height="380"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-eH-NZj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-eH-NZj">
                                 <rect key="frame" x="20" y="55" width="374" height="380"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="14q-jA-Rqy" secondAttribute="trailing" constant="20" id="1Sn-mr-4Vc"/>
+                            <constraint firstItem="14q-jA-Rqy" firstAttribute="height" secondItem="nXh-eH-NZj" secondAttribute="height" id="4R6-Mz-5bE"/>
+                            <constraint firstItem="14q-jA-Rqy" firstAttribute="top" secondItem="nXh-eH-NZj" secondAttribute="bottom" constant="32" id="AC4-nC-xws"/>
+                            <constraint firstItem="nXh-eH-NZj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="Bmz-Nx-DZa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="14q-jA-Rqy" secondAttribute="bottom" constant="15" id="Te2-va-4Dd"/>
+                            <constraint firstItem="14q-jA-Rqy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tma-Wi-zPY"/>
+                            <constraint firstItem="nXh-eH-NZj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dPb-TQ-EpP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nXh-eH-NZj" secondAttribute="trailing" constant="20" id="dmO-3M-SQS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
